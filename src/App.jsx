@@ -23,7 +23,7 @@ function App() {
   const fetchWeatherData = async (city) => {
     try {
       const coordinates = await axios.get(
-        `http://api.openweathermap.org/geo/1.0/direct?q=${city}&units=Metric&appid=73f50467e579918488b10da1de9909aa`
+        `https://api.openweathermap.org/geo/1.0/direct?q=${city}&units=Metric&appid=73f50467e579918488b10da1de9909aa`
       );
 
       const longitude = coordinates.data[0].lon;
